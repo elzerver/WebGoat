@@ -21,10 +21,11 @@ steps:
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
-    goals: 'clean install'
+    goals: 'clean package'
     publishJUnitResults: true
     javaHomeOption: 'JDKVersion'
-    mavenVersionOption: 'Default'
+    jdkVersionOption: 1.11
+    mavenVersionOption: Default
     mavenAuthenticateFeed: false
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
