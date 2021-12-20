@@ -22,9 +22,9 @@ steps:
   inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'
+    options: '-X'
     javaHomeOption: 'JDKVersion'
-    jdkVersionOption: Default
+    jdkVersionOption: 'default'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: false
-    testResultsFiles: '**/TEST-*.xml'
-    goals: 'clean install'
+    goals: 'package'
