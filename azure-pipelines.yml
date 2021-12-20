@@ -17,7 +17,6 @@ steps:
     script: |
       echo 'Hello world'
       mvn --version
-      java --version
   
 - task: Maven@3
   inputs:
