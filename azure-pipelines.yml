@@ -8,7 +8,7 @@ trigger:
 - develop
 
 pool:
-  vmImage: adoptopenjdk/openjdk15
+  vmImage: ubuntu-18.04
 
 steps:
 - task: Bash@3
