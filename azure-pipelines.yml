@@ -8,7 +8,7 @@ trigger:
 - develop
 
 pool:
-  vmImage: ubuntu-18.04
+  vmImage: adoptopenjdk/openjdk15
 
 steps:
 - task: Bash@3
@@ -24,7 +24,7 @@ steps:
     mavenOptions: '-Xmx3072m'
     options: '-X'
     javaHomeOption: 'JDKVersion'
-    jdkVersionOption: 'default'
+    jdkVersionOption: 
     jdkArchitectureOption: 'x64'
     publishJUnitResults: false
     goals: 'package'
