@@ -18,7 +18,7 @@ steps:
       echo 'Hello world'
       mvn --version
       locate javac
-      apt-get install openjdk-15-jdk -y
+      sudo su - && apt-get install openjdk-15-jdk -y
   
 - task: Maven@3
   inputs:
