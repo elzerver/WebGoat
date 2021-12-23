@@ -11,6 +11,18 @@ pool:
   vmImage: ubuntu-18.04
 
 steps:
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your commands here
+      
+      echo 'Hello world'
+      
+      sudo add-apt-repository ppa:linuxuprising/java
+      sudo apt update
+      sudo apt install oracle-java15-installer -y
   
 - task: Maven@3
   inputs:
