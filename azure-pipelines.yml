@@ -18,7 +18,7 @@ steps:
     mavenOptions: '-Xmx3072m'
     options: '-X'
     javaHomeOption: 'JDKVersion'
-    jdkVersionOption: 1.8
+    jdkVersionOption: default
     jdkArchitectureOption: 'x64'
     publishJUnitResults: false
     goals: 'clean install'
