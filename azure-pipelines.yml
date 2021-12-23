@@ -11,14 +11,6 @@ pool:
   vmImage: ubuntu-18.04
 
 steps:
-- task: Bash@3
-  inputs:
-    targetType: 'inline'
-    script: |
-      echo 'Hello world'
-      mvn --version
-      locate javac
-      sudo su - && apt-get install openjdk-15-jdk -y
   
 - task: Maven@3
   inputs:
