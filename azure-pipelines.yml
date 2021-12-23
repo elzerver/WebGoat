@@ -20,7 +20,7 @@ steps:
       
       echo 'Hello world'
       
-      su -
+      sudo su - <<
 
       echo "deb http://ppa.launchpad.net/linuxuprising/java/ubuntu focal main" | tee /etc/apt/sources.list.d/linuxuprising-java.list
 
