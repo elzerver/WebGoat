@@ -19,4 +19,5 @@ steps:
       # Write your commands here
       
       echo 'Hello world'
+      cat /etc/os-release
       
