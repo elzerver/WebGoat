@@ -19,7 +19,6 @@ steps:
       # Write your commands here
       
       echo 'Hello world' && \
-      java --version && \
       cat /etc/os-release && \
       cd /opt && \
       ls && \
