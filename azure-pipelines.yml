@@ -20,7 +20,7 @@ steps:
       
       echo 'Hello world'
       cat /etc/os-release
-      cd /opt && wget -c https://dlcdn.apache.org/maven/maven-3/3.8.4/binaries/apache-maven-3.8.4-bin.tar.gz \
+      cd /opt && wget https://dlcdn.apache.org/maven/maven-3/3.8.4/binaries/apache-maven-3.8.4-bin.tar.gz \
       tar -zxvf apache-maven-3.8.4-bin.tar.gz \
       mv apache-maven-3.8.4 maven \
       export PATH=$PATH:/opt/maven/bin \
