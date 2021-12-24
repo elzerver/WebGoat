@@ -20,25 +20,3 @@ steps:
       
       echo 'Hello world'
       
-      sudo su - <<
-
-      echo "deb http://ppa.launchpad.net/linuxuprising/java/ubuntu focal main" | tee /etc/apt/sources.list.d/linuxuprising-java.list
-
-      apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 73C3DB2A
-
-      apt-get update
-
-      apt-get install oracle-java15-installer
-
-      exit
-  
-- task: Maven@3
-  inputs:
-    mavenPomFile: 'pom.xml'
-    mavenOptions: '-Xmx3072m'
-    options: '-X'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: default
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: false
-    goals: 'clean install'
