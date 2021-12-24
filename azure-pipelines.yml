@@ -35,6 +35,5 @@ steps:
       unzip develop.zip && \
       ls -ltra && \
       cd WebGoat-develop && \
-      mvn clean package && \ 
-      exit 0
+      mvn clean package
 
