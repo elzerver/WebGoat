@@ -22,8 +22,9 @@ steps:
       cat /etc/os-release && \
       cd /opt && \
       ls && \
-      wget --version
-      # wget https://dlcdn.apache.org/maven/maven-3/3.8.4/binaries/apache-maven-3.8.4-bin.tar.gz \
+      wget --version && \
+      wget https://dlcdn.apache.org/maven/maven-3/3.8.4/binaries/apache-maven-3.8.4-bin.tar.gz && \
+      ls
       # tar -zxvf apache-maven-3.8.4-bin.tar.gz \
       # mv apache-maven-3.8.4 maven \
       # export PATH=$PATH:/opt/maven/bin \
