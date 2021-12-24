@@ -18,7 +18,8 @@ steps:
     script: |
       # Write your commands here
       
-      echo 'Hello world' &&\
+      echo 'Hello world' && \
+      java --version && \
       cat /etc/os-release && \
       cd /opt && \
       ls && \
@@ -34,5 +35,6 @@ steps:
       unzip develop.zip && \
       ls -ltra && \
       cd WebGoat-develop && \
-      mvn clean package 
+      mvn clean package && \ 
+      exit 0
 
